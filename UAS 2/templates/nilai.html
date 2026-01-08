@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Nilai</title>
+</head>
+<body>
+
+<div class="container">
+    <h2>INPUT NILAI</h2>
+
+    <form method="post">
+        {% for i in range(3) %}
+            <label>Nilai {{ i+1 }}</label>
+            <input type="number" step="0.1" name="nilai{{ i }}" required>
+        {% endfor %}
+
+        <button type="submit">Simpan Nilai</button>
+    </form>
+
+    <div class="back">
+        <a href="/">⬅ Kembali ke Menu</a>
+    </div>
+</div>
+
+</body>
+</html>
